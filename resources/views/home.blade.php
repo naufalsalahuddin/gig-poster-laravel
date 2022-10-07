@@ -13,7 +13,7 @@
     @endif
 
     @foreach($listings as $listing)
-    <a href='/listing/{{$listing['id']}}'></a><h2>{{ $listing['title'] }}</h2></a>
+    <a href='/listing/{{$listing['id']}}'><h2>{{ $listing['title'] }}</h2></a>
     <div>{{$listing['desc']}}</div>
     @endforeach
 </body>

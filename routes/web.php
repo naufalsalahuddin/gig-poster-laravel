@@ -2,7 +2,6 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\listing;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +13,7 @@ use App\Models\listing;
 |
 */
 
+// Home Pages
 Route::get('/', function () {
     return view('home',[
         'heading' => "Latest Listings",
@@ -22,7 +22,6 @@ Route::get('/', function () {
 });
 
 // Single Listing
-
 Route::get('/listing/{id}', function ($id) {
     return view('listing',[
         'listing' => listing::find($id)
