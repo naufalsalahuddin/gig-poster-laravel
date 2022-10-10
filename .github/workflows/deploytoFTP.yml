@@ -14,7 +14,7 @@ jobs:
           php-version: 7.4
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-progress
+        run: composer install --ignore-platform-reqs
 
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
