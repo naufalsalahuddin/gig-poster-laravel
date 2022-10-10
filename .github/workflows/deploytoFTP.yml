@@ -10,8 +10,8 @@ jobs:
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          username: u974184456
-          server: access930167352.webspace-data.io
+          username: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_SERVER }}
           port: 22 # default is 22
           password: ${{ secrets.FTP_PASSWORD }}
           sftp_only: true
