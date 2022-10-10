@@ -3,7 +3,6 @@ on: push
 
 jobs:
   deploy-via-sftp:
-    using: "node16"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
