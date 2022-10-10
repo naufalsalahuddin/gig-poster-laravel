@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: SFTP Deploy
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.1
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: u974184456
           server: access930167352.webspace-data.io
@@ -18,7 +18,7 @@ jobs:
           # will put all file under this path
           local_path: ./* # default is ./*
           # files will copy to under remote_path
-          remote_path: /
+          remote_path: ./
 
           # sftp args
           args: "-o ConnectTimeout=5"
