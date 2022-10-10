@@ -14,7 +14,7 @@ jobs:
           server: access930167352.webspace-data.io
           port: 22 # default is 22
           password: ${{ secrets.FTP_PASSWORD }}
-          sftp_only: yes
+          sftp_only: true
 
           # will put all file under this path
           local_path: ./* # default is ./*
